@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+        
+    <div class="one">
+ 
+    </div>
+    <div class="back">
+      <button class='bback'>Вернуть</button>
+    </div>       
+    <script>
+    
+        const div = document.querySelector('.one')
+        let a = 0;
+        let b = 0;
+        let c = 0;
+        let d = 0;
+        show()
+        
+        div.addEventListener('click', function (event) {
+                    if (event.target.closest('.btn1')) {
+                    a++;
+                    show();
+                    console.log(a)
+                    } else if (event.target.closest('.btn2')) {
+                    b++;
+                    show();
+                    console.log(b)
+                    }   else if (event.target.closest('.btn3')) {
+                    c++;
+                    show();
+                    console.log(c)
+                    }   else if (event.target.closest('.btn4')) {
+                    d++;
+                    show();
+                    console.log(d)
+                    }
+                }  
+        ) 
+ 
+ 
+        div.addEventListener('dblclick', function (event2) {
+                    if (event2.target.closest('.btn1')) {
+                    a--;
+                    show();
+                    console.log(a)
+                    } else if (event2.target.closest('.btn2')) {
+                                        a--;
+                    show();
+                      b--;
+                    show();
+                    console.log(b)
+                    }   else if (event2.target.closest('.btn3')) {
+                    c--;
+                    show();
+                    console.log(c)
+                    }   else if (event2.target.closest('.btn4')) {
+                    d--;
+                    show();
+                    console.log(d)
+                    }
+                    Object.create(div);
+                }  
+        )
+        
+      
+        
+        const back = document.querySelector('.back')
+        back.addEventListener('click', function(fn) {
+                   if (fn.target.closest('.bback')) {
+                   alert('не работает');
+                    }
+        }
+      )
+      
+            
+        
+        function show() {
+        div.innerHTML = `
+        <table>
+                <tr>
+                    <td class = b1><button class = "btn1 btn" >${a}</button></td>
+                    <td class = b2><button class = "btn2 btn" >${b}</button></td>
+                </tr>
+                <tr>
+                    <td class = b3><button class = "btn3 btn" >${c}</button></td>
+                    <td class = b4><button class = "btn4 btn" >${d}</button></td>
+                </tr>
+            </table>
+        `;
+        console.log(div.innerText);
+        }
+ 
+    </script>
+</body>
+</html>
+ 

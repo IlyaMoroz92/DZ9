@@ -1,0 +1,52 @@
+
+css
+
+
+body {
+    background-color: rgb(189, 186, 186);
+}
+td {
+    border: 1px solid black;
+    background-color: aquamarine;
+    font-size: 150px;
+    /* padding: 50px; */
+    width: 250px;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+table {
+    margin: 100px auto;
+}
+
+.btn {
+    width: 100%;
+    height: 100%;
+    font-size: 150px;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+    cursor: pointer;
+    
+}
+
+button:hover {
+    background-color: rgb(15, 233, 186);
+    color: white;
+}
+
+.back {
+  text-align: center;
+  
+}
+
+.bback {
+  padding: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  border-radius: 12px;
+  background-color: aquamarine;
+}
